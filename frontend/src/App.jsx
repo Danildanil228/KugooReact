@@ -16,6 +16,10 @@ import { Phone } from './components/buttons/Phone'
 import { Compare } from './components/buttons/Compare'
 import { Share } from './components/buttons/Share'
 import { BackCatalog } from './components/buttons/backCatalog'
+import { CompareIcon } from './components/buttons/CompareIcon'
+import { Heart } from './components/buttons/Heart'
+import { Cart } from './components/buttons/Cart'
+import { About } from './components/buttons/About'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -36,6 +40,10 @@ function App() {
       <Compare/>
       <Share/>
       <BackCatalog/>
+      <CompareIcon/>
+      <Heart/>
+      <Cart/>
+      <About/>
     </>
   )
 }

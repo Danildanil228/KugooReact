@@ -1,0 +1,7 @@
+.about{
+    background: rgba(244, 247, 251, 1);
+    padding: 10px 22px;
+}
+.about:hover{
+    color: rgba(111, 115, 238, 1);
+}

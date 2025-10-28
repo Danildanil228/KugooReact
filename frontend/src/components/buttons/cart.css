@@ -1,0 +1,13 @@
+.cart-bg{
+    transition: 0.2s ease;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+}
+.cart-bg:hover{
+    background: rgba(244, 247, 251, 1); 
+}
