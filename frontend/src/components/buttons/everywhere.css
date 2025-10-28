@@ -1,43 +1,35 @@
-/* DropdownMenu.css */
-.dropdown {
-    position: relative;
-    display: inline-block;
+.everywhere{
+    color: black !important;
+    background: #F4F7FB !important;
+    font-weight: 400 !important; 
 }
-.dropdown img{
-    height: 8px;
+.item{
+    transition: 0.2s ease;
 }
-
-
-.dropdown-toggle {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 16px;
-    background: #F4F7FB;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: all 0.2s ease;
-}
-.dropdown a{
-    font-size: 14px;
-    transition: all 0.2s ease;
-}
-.dropdown a:hover{
+.item:hover{
+    background: none;
     color: #6F73EE;
 }
-
-.dropdown-arrow {
-    transition: transform 0.3s ease;
+.drop{
+    background: rgba(244, 247, 251, 1) !important;
+    border: none;
 }
-
-.dropdown-arrow.rotated {
+.dropmenu{
+    border: none;
+}
+.arrow {
+    transition: transform 0.2s ease-in-out;
+}
+button[data-state="open"] .arrow {
     transform: rotate(180deg);
 }
+.everywhere:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
 
-.dropdown-menu {
-    margin-top: 10px;
-    background: #F4F7FB;
-    padding: 10px 15px;
-    border-radius: 5px;
+
+button.everywhere:focus {
+    outline: none;
+    box-shadow: none;
 }
