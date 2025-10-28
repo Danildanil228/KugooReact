@@ -1,0 +1,10 @@
+.pre-order{
+    padding: 15px 25px;
+    color: white;
+    background: #F3A712;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.pre-order:hover{
+    background: #FAB836;
+}

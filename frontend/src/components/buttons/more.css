@@ -1,0 +1,16 @@
+.more{
+    background: #6F73EE;
+    color: white;
+    padding: 11px 18px;
+    gap: 60px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.arrow{
+    width: 10px;
+}
+.more:hover{
+    background: #8185F9;
+}

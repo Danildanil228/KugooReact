@@ -1,0 +1,12 @@
+.for-city{
+    padding: 10px 20px;
+    color: #5D6C7B;
+    background: #F4F7FB;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    border: 1px solid #F4F7FB;
+}
+.for-city:hover{
+    border: 1px solid #6F73EE;
+    color: #6F73EE;
+}

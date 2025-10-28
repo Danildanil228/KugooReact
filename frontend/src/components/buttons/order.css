@@ -1,0 +1,10 @@
+.order{
+    padding: 10px 20px;
+    color: white;
+    background: #6F73EE;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.order:hover{
+    background-color: #8185F9;
+}

@@ -1,0 +1,11 @@
+.watch-all{
+    padding: 15px 25px;
+    color: #6F73EE;
+    border: 1px solid #6F73EE;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.watch-all:hover{
+    background-color: #6F73EE;
+    color: white;
+}
