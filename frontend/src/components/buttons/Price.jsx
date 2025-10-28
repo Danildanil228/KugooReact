@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import './price.css';
+import "@radix-ui/themes/styles.css";
+import {Button, DropdownMenu } from "@radix-ui/themes";
 
 export function Price(){
     
@@ -7,30 +9,19 @@ export function Price(){
 
     return(
         <>
-        <div className="price-dropdown">
-            <button 
-                className="dropdown-toggle"
-                onClick={() => setIsOpen(!isOpen)}
-            >
-                По цене
-                <img 
-                src="./arrow2.svg" 
-                alt="стрелка"
-                className={`dropdown-arrow ${isOpen ? 'rotated' : ''}`}
-                />
-            </button>
-            
-            {isOpen && (
-                <div className="dropdown-menu">
-                    <div className="dropdown-item">
-                        <a href="">Сначала дорогие</a> 
-                    </div>
-                    <div className="dropdown-item">
-                        <a href="">Сначала дешёвые</a>
-                    </div>
-                </div>
-            )}
-            </div>
+            <DropdownMenu.Root className="price-dropmenu">
+                <DropdownMenu.Trigger>
+                    <Button className="price" variant="soft">
+                        По цене 
+                        <DropdownMenu.TriggerIcon className="trig"/>
+                    </Button>
+                </DropdownMenu.Trigger>
+                <DropdownMenu.Content className='price-drop'>
+                    <DropdownMenu.Item className='item'>Сначала дорогие</DropdownMenu.Item>
+                    <DropdownMenu.Item className='item'>Сначала дешёвые</DropdownMenu.Item>
+                    
+                </DropdownMenu.Content>
+            </DropdownMenu.Root>
         </>
         
     )

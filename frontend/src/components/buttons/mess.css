@@ -1,0 +1,12 @@
+.mess{
+    display: flex;
+    gap: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+.mess img{
+    height: 20px;
+}
+.mess:hover {
+    filter: grayscale(0%);
+}

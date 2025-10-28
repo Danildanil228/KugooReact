@@ -1,0 +1,22 @@
+.plus-btn {
+    padding: 6px;
+    border: 1.5px solid rgba(93, 108, 123, 1);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    background: transparent;
+}
+
+.plus-btn:hover {
+    background: rgba(93, 108, 123, 1);
+}
+
+.plus-btn:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.phone {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

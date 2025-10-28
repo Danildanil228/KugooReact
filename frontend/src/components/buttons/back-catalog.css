@@ -1,0 +1,14 @@
+.back-catalog img{
+    width: 20px;
+}
+.back-catalog{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: rgba(93, 108, 123, 1);
+    transition: 0.2s ease;
+}
+.back-catalog:hover, .back-catalog:hover img{
+    color: black;
+    filter: brightness(0) invert(0);
+}

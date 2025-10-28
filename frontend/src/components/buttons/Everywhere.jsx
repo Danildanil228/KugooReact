@@ -1,5 +1,8 @@
-import React, {useState} from "react";
 import './everywhere.css';
+import React, {useState} from "react";
+import "@radix-ui/themes/styles.css";
+import {Button, DropdownMenu } from "@radix-ui/themes";
+
 
 export function Everywhere(){
     
@@ -7,30 +10,19 @@ export function Everywhere(){
 
     return(
         <>
-        <div className="dropdown">
-            <button 
-                className="dropdown-toggle"
-                onClick={() => setIsOpen(!isOpen)}
-            >
-                Везде
-                <img 
-                src="./down.svg" 
-                alt="стрелка"
-                className={`dropdown-arrow ${isOpen ? 'rotated' : ''}`}
-                />
-            </button>
-            
-            {isOpen && (
-                <div className="dropdown-menu">
-                    <div className="dropdown-item">
-                        <a href="">Самокаты</a> 
-                    </div>
-                    <div className="dropdown-item">
-                        <a href="">Аксессуары</a>
-                    </div>
-                </div>
-            )}
-            </div>
+            <DropdownMenu.Root className="dropmenu">
+                <DropdownMenu.Trigger>
+                    <Button className="everywhere" variant="soft">
+                        Везде <img className="arrow" src="./down.svg" alt="" />
+                    </Button>
+                </DropdownMenu.Trigger>
+                <DropdownMenu.Content className='drop'>
+                    <DropdownMenu.Item className='item'>Самокаты</DropdownMenu.Item>
+                    <DropdownMenu.Item className='item'>Аксессуары</DropdownMenu.Item>
+                    
+                </DropdownMenu.Content>
+            </DropdownMenu.Root>
+
         </>
         
     )
