@@ -13,7 +13,7 @@ export function Everywhere(){
             <DropdownMenu.Root className="dropmenu">
                 <DropdownMenu.Trigger>
                     <Button className="everywhere" variant="soft">
-                        Везде <img className="arrow" src="./down.svg" alt="" />
+                        Везде<img className="arrow" src="./down.svg" alt="" />
                     </Button>
                 </DropdownMenu.Trigger>
                 <DropdownMenu.Content className='drop'>

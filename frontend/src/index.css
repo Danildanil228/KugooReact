@@ -24,3 +24,12 @@ a,p{
   color: black;
   font-family: "Jost", sans-serif !important;
 }
+input{
+  font-family: "Jost", sans-serif !important;
+  font-size: 14px;
+  border: none;
+}
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

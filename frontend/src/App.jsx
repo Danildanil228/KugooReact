@@ -20,6 +20,8 @@ import { CompareIcon } from './components/buttons/CompareIcon'
 import { Heart } from './components/buttons/Heart'
 import { Cart } from './components/buttons/Cart'
 import { About } from './components/buttons/About'
+import { Search } from './components/forms/Search'
+import { PhoneNumber } from './components/forms/PhoneNumber'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -44,6 +46,8 @@ function App() {
       <Heart/>
       <Cart/>
       <About/>
+      <Search/>
+      <PhoneNumber/>
     </>
   )
 }
