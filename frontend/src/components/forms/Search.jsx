@@ -1,6 +1,6 @@
-import React from "react"
-import './search.css'
-import { Everywhere } from "../buttons/Everywhere"
+import React from "react";
+import './search.css';
+import { Everywhere } from "../buttons/Everywhere";
 
 export function Search(){
     return(

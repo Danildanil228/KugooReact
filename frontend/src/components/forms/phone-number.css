@@ -1,0 +1,21 @@
+.phone-input {
+  font-size: 18px;
+  padding: 10px 14px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  width: 200px;
+  color: #222;
+  transition: all 0.2s ease;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.phone-input:hover {
+  border-color: #999;
+}
+
+.phone-input:focus {
+  border-color: #4b7bf5;
+  box-shadow: 0 0 0 2px rgba(75, 123, 245, 0.2);
+}
